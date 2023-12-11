@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+/* css reset */
+*, 
+*:before, 
+*:after {
+    
+    padding: 0;
+    margin:0;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    }
+
+body{
+    background-color: #dfe0e4;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18;
+}
+
+
+
+pre{
+    padding: 1em;
+    border: 1px solid black;
+}
+
+img{
+    max-width: 100%;
+}
+
+figcaption{
+    max-width: 100%;
+}  
+
+
+code{
+    display: block;
+    white-space: pre-wrap;
+}
+
+header{
+    font-size: 1.8em;
+}
+
+header, 
+footer {
+    color: rgb(30, 42, 103);
+}
+
+h1, 
+h2, 
+h3, 
+h4 {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+}
+
+h1, 
+h2, 
+h3,
+h4{
+    font-family: 'Onest', serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 1.8em;
+    color: #2e60a6;
+}
+
+h2 {
+    font-size: 1.5em;
+    background-color: #2e60a6;
+    color: #ffffff;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+ 
+h4 {
+    font-size: 1.2em;
+}
+
+p{
+    margin: 1em 0;
+    line-height: 1.3em;
+}
+
+
+
+aside {
+    color: white;
+}
+
+section, 
+figure {
+    margin: 1em 1em 0 0;
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+nav{
+    border: 20px white solid;
+    padding: 1em;
+    font-size: 1.1em;
+}
+
+header, 
+aside, 
+section,
+figure,
+footer {
+    padding:  1em 1em 1em 1em;
+}
+
+
+header, footer {
+    text-align: center;
+}
+
+input:focus {
+    background: black;
+    color: white;
+    border: 4px solid yellow;
+
+}
+
+input:invalid {
+    border: 1px dotted red;
+}
+
+label
+{
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+/*will target any field that is not submit and is valid*/
+input:not([type="submit"]):valid {
+    border-color: #03a964;
+    box-shadow: 0 0 3px #03a964;
+}
+
+/* Hide and show list of inputRequirements when interacting with input */
+input:not([type="submit"]) + .inputRequirements {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 1s ease-out;
+}
+
+input:not([type="submit"]):hover + .inputRequirements,
+input:not([type="submit"]):focus + .inputRequirements,
+input:not([type="submit"]):active + .inputRequirements {
+    max-height: 1000px; /* any large number (bigger then the .inputRequirements list) */
+    transition: max-height 1s ease-in;
+}
+
+table, th, td {
+    border-collapse: collapse;
+}
+table{
+    margin-bottom: 30px;
+    display: block;
+    max-width: 100%;
+    overflow: auto;
+}
+th {
+    color: white;
+    background-color:  #2e60a6;;
+}
+th, td {
+    border: 1.5px solid  #2e60a6;
+    padding: 1em;
+    text-align: left;
+}
+caption{
+    padding: 0 0 1em 0;
+}
+
+.skip-link{
+    background: white;
+    color: #000;
+    font-weight: 700px;
+    padding: 4px;
+    position: absolute;
+    transform: translateY(-200%);
+}
+
+.skip-link:focus{
+    transform: translateY(0%);
+}
+
+.skip-link {
+    transition: transform 0.3s;
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(0,0,0,0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding:0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+nav ul li{
+    list-style: none;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: rgb(50, 58, 96);
+    padding: 0em 0em;
+
+}
+
+
+
+aside ul li a:link{
+    color: white;
+}
+
+aside ul li a:visited{
+    color: #dfe0e4;
+}
+
+aside ul {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
+aside ul li{
+    list-style: none;
+    font-size: 1em;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    padding: 1em;
+}
+
+ul{
+    padding: 1em;
+}
+
+a:link {
+    color: rgb(255, 255, 255);
+}
+
+a:visited {
+    color: rgb(5, 8, 46);
+}
+
+.selected
+{
+    color: rgb(255, 255, 255);
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+    
+
+}
+
+a:active {
+    color:  rgb(255, 255, 255);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #dfe0e4;
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #dfe0e4;
+    display: grid;
+    width: auto;
+    height: auto;
+}
+
+header{grid-area: header1; background: #dfe0e4;}
+nav{grid-area: nav1; background: #2e60a6;}
+main{grid-area: main1; background: #dfe0e4; max-height: 100%;}
+aside{grid-area: aside1; background:#2e60a6;}
+footer{grid-area: footer1; background: #dfe0e4;}
+
+
+@media screen
+and (max-width: 640px) {
+    nav ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+        
+    nav ul li {
+        list-style: none;
+    }
+}

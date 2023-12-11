@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <title>Advocating For Universal Design</title>
+    <link href="./index.css" rel="stylesheet">
+    <link href="./intro.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <a class="skip-link" href="#main-content">Skip to main content</a>
+        <header>
+            <h1>Advocating For Universal Design</h1>
+        </header>
+        <nav>
+            <h2 class="sr-only">Main Navigation</h2>
+            <ul>
+
+                <li><a href = "index.html">INTRO</a></li>
+                <li><a href = "what.html">WHAT</a></li>
+                <li><a href = "why.html">WHY</a></li>
+                <li><a href = "how.html">HOW</a></li>
+            </ul>
+        </nav>
+        <main id="main-content">
+
+            <section id = sec1>
+                <h2>How Do We Apply Universal Design?</h2>
+                <p>There are many ways that we can possibly get involved let's look at a couple of popular options! </p>
+    
+                <h3>Education and Training</h3>
+                <p>Start by educating yourself on web accessibility standards and guidelines such as WCAG (Web Content Accessibility Guidelines). There are numerous online resources, courses, and certifications available that can help you understand the principles and techniques required for creating accessible websites.</p>
+
+                <h3>Join Accessibility Communities and Forums</h3>
+                <p>Engage with online communities, forums, or groups dedicated to web accessibility. Participating in discussions, sharing knowledge, and seeking advice from experts can help you learn and network within the accessibility community.</p>
+
+                <h3>Advocate for Accessibility in your Workplace</h3>
+                <p>If you're already working in a web development role, advocate for accessibility within your company. Encourage the adoption of accessibility best practices in ongoing projects and suggest making existing websites more accessible.</p>
+
+            </section>
+            <section id = "tools">
+
+                <h2>Using Tools That Verify Accessibility</h2>
+
+                <p> As a developer you have access to many tools on the internet that may allow you to check for necessary compoenents of a website to ensure that they are accessible such as the following: </p>
+
+                <table>
+                    <caption>Accesibility Software Tools</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Tool Name</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>W3 Validator</td>
+                            <td>Checks if web pages follow correct standards, finding errors that might affect how the website works. </td>
+                        </tr>
+                        <tr>
+                            <td>WAVE Evaluation Tool</td>
+                            <td> Identifies potential barriers for users with disabilities, helping to make websites more accessible.</td>
+                        </tr>
+                        <tr>
+                            <td>HTML5 Outliner</td>
+                            <td>Generates an organized view of headings in an HTML document, aiding in understanding content structure.</td>
+                        </tr>
+                        <tr>
+                            <td>Google Fonts</td>
+                            <td>Provides free and diverse fonts for web projects, enhancing the visual appearance of text on websites.</td>
+                        </tr>
+                        <tr>
+                            <td>Adobe Colors</td>
+                            <td>Helps create pleasing color combinations for designs by generating and exploring color palettes.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+
+            <section id = "codePrac">
+
+                <h2>Using Code That Promotes Accessibility</h2>
+
+                <h3> Semantic HTML </h3>
+                 
+                <p>Using semantic HTML means organizing website content in a smart way. It helps computers and tools understand what each part of the content is about, making it easier for everyone to use the website. It also helps with how well the website appears in search results. When we organize content this way, it also makes it easier for web developers to work with and keep things in order. So, it's like arranging things neatly for everyone to understand easily, both for people and computers.</p>
+
+                <p> Below is an example of what a snippet of some semantic code may look like: </p>
+                <code>&lt;!DOCTYPE html&gt;
+                    &lt;html lang="en"&gt;
+                    &lt;head&gt;
+                      &lt;meta charset="UTF-8"&gt;
+                      &lt;title&gt;Semantic HTML Example&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                      &lt;header&gt;
+                        &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+                      &lt;/header&gt;
+                    
+                      &lt;main&gt;
+                        &lt;section&gt;
+                          &lt;h2&gt;About&lt;/h2&gt;
+                          &lt;p&gt;Learn more...&lt;/p&gt;
+                        &lt;/section&gt;
+                      &lt;/main&gt;
+                    
+                      &lt;footer&gt;
+                        &lt;p&gt;&amp;copy; 2023 My Website&lt;/p&gt;
+                      &lt;/footer&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                    </code>
+                <h3> Skip Navigation</h3>
+
+                <p> Skip navigation is helpful because it allows people using screen readers or keyboards to skip repetitive content on a webpage, like menus, and go straight to the main content. This makes the website more accessible and saves time for those who navigate differently, ensuring they can easily find what they need without going through every menu each time they visit a page.</p>
+                <p> Below is an example of what a snippet of some skip nav code may look like: </p>
+                <code>&lt;!DOCTYPE html&gt;
+                    &lt;html lang="en"&gt;
+                    &lt;head&gt;
+                      &lt;meta charset="UTF-8"&gt;
+                      &lt;title&gt;Skip Navigation Example&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                      &lt;a href="#main-content" style="position:absolute; left:-9999px;"&gt;Skip to main content&lt;/a&gt;
+                    
+                      &lt;header&gt;
+                        &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+                        &lt;!-- Navigation and other content --&gt;
+                      &lt;/header&gt;
+                    
+                      &lt;main id="main-content"&gt;
+                        &lt;!-- Main content --&gt;
+                      &lt;/main&gt;
+                    
+                      &lt;footer&gt;
+                        &lt;p&gt;&amp;copy; 2023 My Website&lt;/p&gt;
+                      &lt;/footer&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                    </code>
+                <h3> Screen Reader Accessible</h3>
+                <p> 
+                    Screen-reader-only code is useful because it provides information specifically for users who rely on screen readers to access websites. It includes hidden text or descriptions that are only heard by screen readers, ensuring that visually impaired users get important information such as alternative text for images or descriptions of visual elements, making the website more accessible to them. </p>
+                    <p> Below is an example of what a snippet of some screen-reader only code may look like: </p>
+                    <code>&lt;div aria-hidden="true"&gt;This text is for screen readers only&lt;/div&gt;</code>
+            </section>
+
+       
+        </main>
+        <aside>
+            <h2>Contact Me</h2>
+
+            <p> Whether you would like to share improvements to the site or if you would like to chat about involvment in how to advocate for accessible design feel free to contact me today!</p>
+            <p> * - Indicates that this field is required for submission.</p>
+            <form id="myform" method="post">
+                <fieldset>
+                    <legend>Please Provide Information</legend>
+                    <label for="name">
+                        What is your name? *
+                        <input type="text" id="name" required>
+                    </label>
+                    <label for="email">
+                        What is your email? *
+                        <input type="text" id="email" required>
+                    </label>
+                    <label for="phone">
+                        What is your phone number? *
+                        <input type="tel" id="phone" minlength="7" required>
+                    </label>
+                    <label for="request">
+                        Leave a comment below today!
+                        <input type="text" id="request">
+                    </label>
+                    <input type="submit">
+                </fieldset>
+            </form>
+        </aside>
+        <footer>
+            Site by Samridhi Shrestha. 
+        </footer>
+    </div>
+</body>
+</html>
